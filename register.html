@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5 text-center">
+        <div class="col-8">
+          <div
+            class="login-card shadow-lg d-flex flex-column align-items-center p-5"
+          >
+            <h3 class="secondary-color">Smart Login System</h3>
+            <div class="row w-100">
+              <form class="novalidate">
+                <div class="col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control my-2"
+                    placeholder="Enter your Name"
+                    required
+                    aria-describedby="name-validation"
+                  />
+                  <div class="invalid-feedback" id="name-validation">
+                    Please Enter a name that starts with a capital letter and
+                    have a space
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control my-2"
+                    placeholder="Enter your email"
+                    aria-describedby="email-validation"
+                    required
+                  />
+                  <!-- I don't know what should l do so that email validation message
+                  will not be linked with the name field -->
+                  <div class="invalid-feedback" id="email-validation">
+                    Please Enter an email
+                  </div>
+
+                  <input
+                    type="password"
+                    class="form-control my-2"
+                    placeholder="Enter your password"
+                    required
+                    id="password-validation"
+                  />
+                  <div class="invalid-feedback" id="password-validation">
+                    Please Enter at least 4 chars
+                  </div>
+                  <p class="error-text text-danger d-none">error</p>
+                  <input
+                    type="button"
+                    value="Register"
+                    class="btn btn-outline-secondary w-100 my-3"
+                  />
+                </div>
+              </form>
+              <p class="text-white mt-3">
+                Have an account?
+                <a href="index.html" class="text-decoration-none text-white"
+                  >Login</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>
